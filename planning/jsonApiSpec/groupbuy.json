@@ -1,0 +1,87 @@
+{
+  "groupBuys": [
+    {
+
+      ///////////////////////////////
+      // Standard meta information //
+      ///////////////////////////////
+
+      "id": "1", // Group Buy UUID
+      "createdAt": "timeStamp", // Epoch timestamp
+      "updatedAt": "timeStamp",
+
+      ////////////////////////////////////////
+      // Group Buy organization information //
+      ////////////////////////////////////////
+
+      "email": "example@example.com",
+      "organizerId": "1", //req //just one for now // User UUID
+      "manufacturer": "Signature Plastics", // Among others
+      "endsAt": "timeStamp",
+      "cancelledAt": "timeStamp",
+
+      "paymentCollectors": [ //req one (ie. self/organizer)
+        "1", // User UUID
+        "2"
+        // And more...
+      ],
+
+      /////////////////////////////////////////
+      // Textual intro and updates to the GB //
+      /////////////////////////////////////////
+
+      "introduction": {
+        "id": "1", // Intro UUID
+        "body": "html",
+        "createdAt": "timeStamp",
+        "updatedAt": "timeStamp",
+        "editCount": "integer"
+      },
+      "statusUpdates": [
+        {
+          "id": "1" // UUID
+          "body": "html",
+          "createdAt": "timeStamp",
+          "updatedAt": "timeStamp",
+          "editCount": "integer"
+        },
+        {
+          "id": "2" // UUID
+          "body": "html",
+          "createdAt": "timeStamp",
+          "updatedAt": "timeStamp",
+          "editCount": "integer"
+        }
+        // And more...
+      ],
+
+      //////////////////////////////////////
+      // Orderables and order information //
+      // -------------------------------- //
+      //  orderableSets are composed of   //
+      //    arrays of orderableItems      //
+      //////////////////////////////////////
+
+      "orderableSets": [
+        "1", // Orderable Sets UUIDs
+        "2"
+        // And more...
+      ],
+
+      "orders": [
+        "1", // Orders UUIDs
+        "2"
+        // And more...
+      ]
+    },
+
+    ///////////////////////////
+    // Start of Group Buy #2 //
+    ///////////////////////////
+
+    {
+      "id": "2" // UUID
+    }
+    // And more...
+  ]
+}

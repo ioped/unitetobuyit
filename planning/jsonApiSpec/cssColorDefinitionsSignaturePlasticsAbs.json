@@ -1,0 +1,507 @@
+//////////////////////////////////////////////////
+// Signature Plastics ABS plastic CSS color key //
+//////////////////////////////////////////////////
+
+{
+  "colors": [
+
+    // Whites
+
+    {
+      "id": "1",
+      "signaturePlasticsId": "WA",
+      "family": "whites",
+      "hex": "ffffff",
+      "cssName": "white"
+    },
+    {
+      "id": "2",
+      "signaturePlasticsId": "WCK",
+      "family": "whites",
+      "hex": "fffef3",
+      "cssName": "cream"
+    },
+    {
+      "id": "3",
+      "signaturePlasticsId": "WBO",
+      "family": "whites",
+      "hex": "f9f7de",
+      "cssName": ""
+    },
+    {
+      "id": "4",
+      "signaturePlasticsId": "WBM",
+      "family": "whites",
+      "hex": "e5e3d1",
+      "cssName": ""
+    },
+    {
+      "id": "5",
+      "signaturePlasticsId": "WEA",
+      "family": "whites",
+      "hex": "e2e2d8",
+      "cssName": ""
+    },
+    {
+      "id": "6",
+      "signaturePlasticsId": "WFK",
+      "family": "whites",
+      "hex": "e0e3e0",
+      "cssName": ""
+    },
+    {
+      "id": "7",
+      "signaturePlasticsId": "WFM",
+      "family": "whites",
+      "hex": "ebece1",
+      "cssName": ""
+    },
+    { 
+      "id": "8",
+      "signaturePlasticsId": "WFO",
+      "family": "whites",
+      "hex": "e3e6d4",
+      "cssName": ""
+    },
+    { 
+      "id": "9",
+      "signaturePlasticsId": "WQ",
+      "family": "whites",
+      "hex": "ebede8",
+      "cssName": ""
+    },
+    { 
+      "id": "10",
+      "signaturePlasticsId": "WV",
+      "family": "whites",
+      "hex": "e7eae1",
+      "cssName": ""
+    },
+    { 
+      "id": "11",
+      "signaturePlasticsId": "WW",
+      "family": "whites",
+      "hex": "eeeee6",
+      "cssName": ""
+    },
+    { 
+      "id": "12",
+      "signaturePlasticsId": "WAR",
+      "family": "whites",
+      "hex": "c0bea6",
+      "cssName": ""
+    },
+
+    // Reds
+
+    {
+      "id": "13",
+      "signaturePlasticsId": "RCS",
+      "family": "reds",
+      "hex": "fdc0e9",
+      "cssName": "pink"
+    },
+    {
+      "id": "14",
+      "signaturePlasticsId": "RCJ",
+      "family": "reds",
+      "hex": "c5b4ea",
+      "cssName": "lavender"
+    },
+    {
+      "id": "15",
+      "signaturePlasticsId": "RCU",
+      "family": "reds",
+      "hex": "fa6f5c",
+      "cssName": "salmon"
+    },
+    {
+      "id": "16",
+      "signaturePlasticsId": "RR",
+      "family": "reds",
+      "hex": "ea352e",
+      "cssName": ""
+    },
+    {
+      "id": "17",
+      "signaturePlasticsId": "RCQ",
+      "family": "reds",
+      "hex": "d6150c",
+      "cssName": ""
+    },
+    {
+      "id": "18",
+      "signaturePlasticsId": "RN",
+      "family": "reds",
+      "hex": "bb2b2b",
+      "cssName": ""
+    },
+    {
+      "id": "19",
+      "signaturePlasticsId": "RA",
+      "family": "reds",
+      "hex": "be0203",
+      "cssName": ""
+    },
+    {
+      "id": "20",
+      "signaturePlasticsId": "RBV",
+      "family": "reds",
+      "hex": "a90c15",
+      "cssName": ""
+    },
+    {
+      "id": "21",
+      "signaturePlasticsId": "RAC",
+      "family": "reds",
+      "hex": "a30401",
+      "cssName": ""
+    },
+    {
+      "id": "22",
+      "signaturePlasticsId": "RAS",
+      "family": "reds",
+      "hex": "900814",
+      "cssName": ""
+    },
+    {
+      "id": "23",
+      "signaturePlasticsId": "RBC",
+      "family": "reds",
+      "hex": "6c2428",
+      "cssName": "plum"
+    },
+
+    // Oranges
+
+    {
+      "id": "24",
+      "signaturePlasticsId": "OBC",
+      "family": "oranges",
+      "hex": "f35f08",
+      "cssName": "tangerine"
+    },
+    {
+      "id": "25",
+      "signaturePlasticsId": "OAS",
+      "family": "oranges",
+      "hex": "fb5703",
+      "cssName": ""
+    },
+    {
+      "id": "26",
+      "signaturePlasticsId": "ON",
+      "family": "oranges",
+      "hex": "ef3b0e",
+      "cssName": ""
+    },
+    {
+      "id": "27",
+      "signaturePlasticsId": "OAV",
+      "family": "oranges",
+      "hex": "e82c13",
+      "cssName": ""
+    },
+    {
+      "id": "28",
+      "signaturePlasticsId": "OB",
+      "family": "oranges",
+      "hex": "d8200e",
+      "cssName": ""
+    },
+
+    // Yellows
+
+    {
+      "id": "29",
+      "signaturePlasticsId": "YCA",
+      "family": "yellows",
+      "hex": "fefee6",
+      "cssName": ""
+    },
+    {
+      "id": "30",
+      "signaturePlasticsId": "YCC",
+      "family": "yellows",
+      "hex": "fdf3b6",
+      "cssName": ""
+    },
+    {
+      "id": "31",
+      "signaturePlasticsId": "YCE",
+      "family": "yellows",
+      "hex": "fefe9a",
+      "cssName": ""
+    },
+    {
+      "id": "32",
+      "signaturePlasticsId": "YY",
+      "family": "yellows",
+      "hex": "fffe88",
+      "cssName": ""
+    },
+    {
+      "id": "33",
+      "signaturePlasticsId": "YK",
+      "family": "yellows",
+      "hex": "fef58c",
+      "cssName": ""
+    },
+    {
+      "id": "34",
+      "signaturePlasticsId": "YCF",
+      "family": "yellows",
+      "hex": "fedd76",
+      "cssName": ""
+    },
+    {
+      "id": "35",
+      "signaturePlasticsId": "YCD",
+      "family": "yellows",
+      "hex": "f6ea60",
+      "cssName": ""
+    },
+    {
+      "id": "36",
+      "signaturePlasticsId": "YCH",
+      "family": "yellows",
+      "hex": "f6e649",
+      "cssName": ""
+    },
+    {
+      "id": "37",
+      "signaturePlasticsId": "YCB",
+      "family": "yellows",
+      "hex": "e9d864",
+      "cssName": ""
+    },
+    {
+      "id": "38",
+      "signaturePlasticsId": "YBP",
+      "family": "yellows",
+      "hex": "fed545",
+      "cssName": ""
+    },
+    {
+      "id": "39",
+      "signaturePlasticsId": "YCG",
+      "family": "yellows",
+      "hex": "fdc623",
+      "cssName": ""
+    },
+    {
+      "id": "40",
+      "signaturePlasticsId": "YL",
+      "family": "yellows",
+      "hex": "edb053",
+      "cssName": ""
+    },
+    {
+      "id": "41",
+      "signaturePlasticsId": "YW",
+      "family": "yellows",
+      "hex": "e5b670",
+      "cssName": ""
+    },
+    {
+      "id": "42",
+      "signaturePlasticsId": "YG",
+      "family": "yellows",
+      "hex": "dcc47a",
+      "cssName": ""
+    },
+
+    // Greens
+
+    { 
+      "id": "43",
+      "signaturePlasticsId": "VCO",
+      "family": "greens",
+      "hex": "9afddb",
+      "cssName": ""
+    },
+
+    VBV: { "family": "greens", "hex": "90f6e9", "cssName": "" },
+    VAT: { "family": "greens", "hex": "99df5e", "cssName": "lime" },
+    VAV: { "family": "greens", "hex": "79b255", "cssName": "" },
+    VBQ: { "family": "greens", "hex": "4c8f3a", "cssName": "" },
+    VCS: { "family": "greens", "hex": "038336", "cssName": "" },
+    VAF: { "family": "greens", "hex": "61a19c", "cssName": "" },
+    VAG: { "family": "greens", "hex": "2eb085", "cssName": "" },
+    VCM: { "family": "greens", "hex": "01ad63", "cssName": "" },
+    VCK: { "family": "greens", "hex": "00b276", "cssName": "" },
+    VCJ: { "family": "greens", "hex": "01925b", "cssName": "" },
+    VH:  { "family": "greens", "hex": "8cb298", "cssName": "" },
+    VF:  { "family": "greens", "hex": "51855b", "cssName": "" },
+    VV:  { "family": "greens", "hex": "045b30", "cssName": "" },
+
+    BFM: { "family": "blues", "hex": "e9fdfe", "cssName": "" },
+    BFO: { "family": "blues", "hex": "e1fdfe", "cssName": "" },
+    BFQ: { "family": "blues", "hex": "d1ffff", "cssName": "" },
+    BX:  { "family": "blues", "hex": "acd2e9", "cssName": "" },
+    BFT: { "family": "blues", "hex": "b2cee3", "cssName": "" },
+    BFN: { "family": "blues", "hex": "a7d7fd", "cssName": "" },
+    BFJ: { "family": "blues", "hex": "9fc6ed", "cssName": "" },
+    BEY: { "family": "blues", "hex": "8bbecf", "cssName": "" },
+    BDG: { "family": "blues", "hex": "5fa4c3", "cssName": "" },
+    BO:  { "family": "blues", "hex": "789ac8", "cssName": "" },
+    BFK: { "family": "blues", "hex": "5882ca", "cssName": "" },
+    BFL: { "family": "blues", "hex": "78c3d2", "cssName": "" },
+    BBQ: { "family": "blues", "hex": "50bfdb", "cssName": "" },
+    BBJ: { "family": "blues", "hex": "349ed0", "cssName": "mediterranean" },
+    BFP: { "family": "blues", "hex": "2a77b4", "cssName": "" },
+    BE:  { "family": "blues", "hex": "2073ae", "cssName": "" },
+    BDH: { "family": "blues", "hex": "1f5db4", "cssName": "" },
+    BFR: { "family": "blues", "hex": "4e4f64", "cssName": "" },
+    BM:  { "family": "blues", "hex": "2f405c", "cssName": "prussian" },
+    BFU: { "family": "blues", "hex": "2d2a4d", "cssName": "" },
+    BEV: { "family": "blues", "hex": "11273c", "cssName": "blueberry" },
+    BBI: { "family": "blues", "hex": "1a1730", "cssName": "" },
+
+    TM:  { "family": "browns", "hex": "f5f2d1", "cssName": "" },
+    TBT: { "family": "browns", "hex": "e0dbc5", "cssName": "" },
+    TN:  { "family": "browns", "hex": "e2dcba", "cssName": "" },
+    TU:  { "family": "browns", "hex": "e6d9b9", "cssName": "" },
+    TEA: { "family": "browns", "hex": "e7d8b1", "cssName": "" },
+    TGG: { "family": "browns", "hex": "a9a288", "cssName": "" },
+    TGH: { "family": "browns", "hex": "552c18", "cssName": "chocolate" },
+    TBN: { "family": "browns", "hex": "372a23", "cssName": "coffee" },
+    TAA: { "family": "browns", "hex": "1a1b18", "cssName": "coal" },
+
+    GA:  { "family": "grays", "hex": "cbc5bd", "cssName": "" },
+    GAA: { "family": "grays", "hex": "cacbc3", "cssName": "" },
+    GAL: { "family": "grays", "hex": "e2e4df", "cssName": "" },
+    GAY: { "family": "grays", "hex": "e1e4dd", "cssName": "" },
+    GAW: { "family": "grays", "hex": "cbccbd", "cssName": "" },
+    GBA: { "family": "grays", "hex": "d2d3cf", "cssName": "" },
+    GC:  { "family": "grays", "hex": "757b81", "cssName": "" },
+    GCF: { "family": "grays", "hex": "dbdcd1", "cssName": "" },
+    GCS: { "family": "grays", "hex": "a4a397", "cssName": "" },
+    GD:  { "family": "grays", "hex": "868e90", "cssName": "" },
+    GDX: { "family": "grays", "hex": "cbc4ac", "cssName": "" },
+    GE:  { "family": "grays", "hex": "414339", "cssName": "" },
+    GEA: { "family": "grays", "hex": "c2c5bd", "cssName": "" },
+    GEQ: { "family": "grays", "hex": "a5a794", "cssName": "" },
+    GER: { "family": "grays", "hex": "dcded0", "cssName": "" },
+    GEV: { "family": "grays", "hex": "939080", "cssName": "" },
+    GEW: { "family": "grays", "hex": "293134", "cssName": "" },
+    GEZ: { "family": "grays", "hex": "b0b0a6", "cssName": "" },
+    GFD: { "family": "grays", "hex": "e0ddcd", "cssName": "" },
+    GFE: { "family": "grays", "hex": "aeab98", "cssName": "" },
+    GFW: { "family": "grays", "hex": "aaa49b", "cssName": "" },
+    GJV: { "family": "grays", "hex": "7e7c75", "cssName": "" },
+    GKH: { "family": "grays", "hex": "b6b8b6", "cssName": "" },
+    GG:  { "family": "grays", "hex": "85837e", "cssName": "" },
+    GGK: { "family": "grays", "hex": "cbc5bd", "cssName": "" },
+    GGM: { "family": "grays", "hex": "adafac", "cssName": "" },
+    GGT: { "family": "grays", "hex": "d2d4ce", "cssName": "" },
+    GLK: { "family": "grays", "hex": "d5dad4", "cssName": "" },
+    GLY: { "family": "grays", "hex": "d7d7cf", "cssName": "" },
+    GN:  { "family": "grays", "hex": "bcbfb9", "cssName": "" },
+    GO:  { "family": "grays", "hex": "777b76", "cssName": "" },
+    GPA: { "family": "grays", "hex": "5d6464", "cssName": "" },
+    GPR: { "family": "grays", "hex": "dfded8", "cssName": "" },
+    GRY: { "family": "grays", "hex": "a8a7a2", "cssName": "" },
+    GRX: { "family": "grays", "hex": "e9eae0", "cssName": "" },
+    GSBXX: { "family": "grays", "hex": "1d2931", "cssName": "" },
+    GSC: { "family": "grays", "hex": "9e9d9d", "cssName": "" },
+    GSK: { "family": "grays", "hex": "bec0c1", "cssName": "" },
+    GSL: { "family": "grays", "hex": "d9dbde", "cssName": "" },
+    GSM: { "family": "grays", "hex": "3d4d60", "cssName": "" },
+    GSP: { "family": "grays", "hex": "949ba0", "cssName": "" },
+    GSY: { "family": "grays", "hex": "7e7f7a", "cssName": "" },
+    GSU: { "family": "grays", "hex": "a8a5a2", "cssName": "" },
+
+    {
+      "id": "",
+      "signaturePlasticsId": "UNKN5",
+      "family": "grays",
+      "hex": "435054",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTA"
+      "family": "grays",
+      "hex": "4a525d",
+      "cssName": ""
+    },
+    {    
+      "id": "",
+      "signaturePlasticsId": "GTB",
+      "family": "grays",
+      "hex": "cfd3cd",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTC",
+      "family": "grays",
+      "hex": "a4aaa4",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTD",
+      "family": "grays",
+      "hex": "8d9291",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTF",
+      "family": "grays",
+      "hex": "dfdccb",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTG",
+      "family": "grays",
+      "hex": "a5aaa3",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTH",
+      "family": "grays",
+      "hex": "adb2b1",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTL",
+      "family": "grays",
+      "hex": "d2d4d6",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GTM",
+      "family": "grays",
+      "hex": "b3b4a9",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "GY", 
+      "family": "grays", 
+      "hex": "868887", 
+      "cssName": ""
+    },
+    {
+      "id": ""
+      "signaturePlasticsId": "UNKN4"
+      "family": "grays",
+      "hex": "474e4f",
+      "cssName": ""
+    },
+    {
+      "id": "",
+      "signaturePlasticsId": "NN",
+      "family": "grays",
+      "hex": "020202",
+      "cssName": "black"
+    }
+  ]
+}

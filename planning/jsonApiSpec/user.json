@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": "1", // obvs req
+      "createdAt": "timeStamp", // Epoch
+      "updatedAt": "timeStamp",
+
+      "email": "example@example.com", //req
+
+      "aliases": {
+        "site": "siteUserNick", //req
+        "deskthority": "deskthorityUserNick", // try to confirm somehow... probably later
+        "geekhack": "geekhackUserNick", // try to confirm somehow...
+        "reddit": "redditUserNick" //try to confirm somehow...
+      },
+
+      //////////////////////////////////
+      // Location/Address information //
+      //////////////////////////////////
+
+      "countryCode": "GB", //req
+
+      "address": {
+        "number": "9", 
+        "postalCode": "EC1R5DF", // Find address via number/postal code combination // Can be overridden
+        "country": "GB", // For overriding purposes
+        "street": "", // For overriding purposes
+        "stateOrCounty": "" // For overriding purposes
+      },
+
+      "paypalEmail": "examplenumbertwo@example.com",
+
+      "": ""
+    },
+
+    //////////////////////
+    // Start of User #2 //
+    //////////////////////
+
+    {
+      "id": "2"
+    }
+      // And more...
+  ]
+}

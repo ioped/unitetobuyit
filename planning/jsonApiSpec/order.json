@@ -1,0 +1,67 @@
+{
+  "orders": [
+    {
+      "id": "1",
+      "userId": "1",
+      "submittedAt": "timeStamp",
+      "cancelledAt": "timeStamp",
+
+      // Which Group Buy and orderables the order is associated with.
+
+      "groupBuy": "1",
+
+      "orderables": [
+        {
+          "set": "1", // Set UUID
+          "amount": "2"
+        },
+        {
+          "set": "2",
+          "amount": "2"
+        }
+      ],
+
+      "currency": "", // EUR, USD, GBP // limited to these for now
+      "shippingPrice": "number", // in cents
+      "totalPrice": "number", // in cents
+
+      // Delivery Address is taken from user address for 'defaulting'
+      // purposes if in user profile. Repeated here for overriding
+      // purposes.
+
+      "deliveryAddress": {
+        "number": "9",
+        "postalCode": "EC1R5DF",
+        "country": "GB",
+        "street": "",
+        "stateOrCounty": ""
+      },
+
+      // Payment and collection related
+
+      "paymentMethod": "Stripe" | "PayPal",
+      "collectorId": "1", //req //just one for now
+
+      "paymentsMade": [
+        {
+          "reference": "", // Paypal or Stripe reference
+          "amount": "num",
+          "currency": "",
+          "paidAt": "timeStamp"
+        },
+        {
+          "reference": "", // Paypal or Stripe reference
+          "amount": "num",
+          "currency": "",
+          "paidAt": "timeStamp"
+        }
+      ]
+
+      "invoicesSent": [
+        {
+          "reference": "",
+        }
+      ]
+    }
+  ]
+}
