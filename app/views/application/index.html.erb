@@ -1,0 +1,54 @@
+<script>
+  UniteToBuyIt.advanceReadiness();
+</script>
+
+<script type="text/x-handlebars" >
+  <header>
+    <h1>UNITE!</h1>
+    <ul>
+      <li><a href="/#">Unite</a></li>
+      <li><a href="/#/users">Users</a></li>
+      <li><a href="/#/group_buys">Group Buys</a></li>
+      <li><a href="/#/orders">My orders</a></li>
+      <li><a href="/#/gallery">Gallery</a></li>
+      <li><a href="/#/account">Account</a></li>
+    </ul>
+  </header>
+
+  <div>
+    {{outlet}}
+  <div>
+
+  <footer>
+    &copy;2013 pedro
+  </footer>
+</script>
+
+<script type="text/x-handlebars" data-template-name="users">
+  <h2>Users</h2>
+  {{#each user in model}}
+    <p>
+      {{#linkTo users.show user}}{{user.name}}{{/linkTo}}
+    </p>
+  {{/each}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="group_buys">
+  <h2>Group Buys</h2>
+</script>
+
+<script type="text/x-handlebars" data-template-name="orders">
+  <h2>Orders</h2>
+</script>
+
+<script type="text/x-handlebars" data-template-name="orderable_sets">
+
+</script>
+
+<script type="text/x-handlebars" data-template-name="orderable_items">
+
+</script>
+
+<script type="text/x-handlebars" data-template-name="gallery">
+  <h2>Gallery</h2> 
+</script>
