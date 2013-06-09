@@ -30,7 +30,10 @@
 
       "paypalEmail": "examplenumbertwo@example.com",
 
-      "": ""
+      "orders": [
+        "1", // Orders UUIDs
+        "2"
+      ]
     },
 
     //////////////////////

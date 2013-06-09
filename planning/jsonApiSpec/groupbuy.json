@@ -14,13 +14,17 @@
       // Group Buy organization information //
       ////////////////////////////////////////
 
+      "name": "name",
       "email": "example@example.com",
-      "organizerId": "1", //req //just one for now // User UUID
-      "manufacturer": "Signature Plastics", // Among others
-      "endsAt": "timeStamp",
-      "cancelledAt": "timeStamp",
+      "organizer": "1", // req // just one for now // User UUID
 
-      "paymentCollectors": [ //req one (ie. self/organizer)
+      "manufacturer": "Signature Plastics", // Among others
+
+      "endsAt": "timeStamp", // req, changeable
+      "deliverableAt": "timestamp", // req,
+      "cancelledAt": "timeStamp", // defaults to null
+
+      "paymentCollectors": [ // req one (ie. self/organizer)
         "1", // User UUID
         "2"
         // And more...
@@ -32,24 +36,28 @@
 
       "introduction": {
         "id": "1", // Intro UUID
-        "body": "html",
         "createdAt": "timeStamp",
         "updatedAt": "timeStamp",
+
+        "body": "html",
         "editCount": "integer"
       },
+
       "statusUpdates": [
         {
           "id": "1" // UUID
-          "body": "html",
           "createdAt": "timeStamp",
           "updatedAt": "timeStamp",
+
+          "body": "html",
           "editCount": "integer"
         },
         {
           "id": "2" // UUID
-          "body": "html",
           "createdAt": "timeStamp",
           "updatedAt": "timeStamp",
+
+          "body": "html",
           "editCount": "integer"
         }
         // And more...

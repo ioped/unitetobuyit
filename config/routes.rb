@@ -1,6 +1,9 @@
 UniteToBuyIt::Application.routes.draw do
 
-  root :to => 'site#index'
+  root :to => 'application#index'
+
+  # scope '/api' do
+  # end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
