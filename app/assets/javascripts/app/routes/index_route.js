@@ -3,9 +3,3 @@ UniteToBuyIt.IndexRoute = Ember.Route.extend({
     this.transitionTo('application');
   }
 });
-
-UniteToBuyIt.UsersIndexRoute = Ember.Route.extend({
-  model: function() {
-    return UniteToBuyIt.User.find();
-  }
-});

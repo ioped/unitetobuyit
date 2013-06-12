@@ -23,5 +23,11 @@ UniteToBuyIt.Router.map(function() {
     this.route('new');
     this.route('show', { path: ':orderable_sets_id' });
     this.route('edit', { path: ':orderable_sets_id/edit' });
-  })
+  });
+
+  this.route('about');
+  this.route('faq');
+  this.route('contact_us');
+
+
 });
