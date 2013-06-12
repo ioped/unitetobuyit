@@ -1,0 +1,26 @@
+body {
+  padding: 0 1em 0 1em;
+}
+
+li {
+  list-style: none;
+}
+
+.avatar-profile {
+  max-height: 20em;
+  max-width: 20em;
+}
+
+
+@mixin rounded($radius: 5em) {
+  border-radius: $radius;
+}
+
+
+.rounded-5 {
+  @include rounded
+}
+
+.rounded-1 {
+  @include rounded(1em)
+}
