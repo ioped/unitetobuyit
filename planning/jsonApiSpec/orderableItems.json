@@ -3,13 +3,13 @@
     {
       "id": "1", // UUID
       "name": "I'm a Shamrock!",
-      "orderableType": "Keycap",
+      "orderableKind": "Keycap",
       "keycapProperties": {
         "manufacturer": "Signature Plastics",
         "manufacturingProcess": "Doubleshot", // Or Dye-sub, or blank/single shot
         "shapeFamily": "DCS", // Or SPH
         "rowProfile": "1",
-        "plasticType": "ABS", // Or PBT ... ABS only for now.
+        "plasticKind": "ABS", // Or PBT ... ABS only for now.
         "size": "100", // Scale: One unit keycap is 100
         "bodyColor": "WA",
         "legendColor": "NN",

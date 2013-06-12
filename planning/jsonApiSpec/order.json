@@ -3,12 +3,14 @@
     {
       "id": "1",
       "userId": "1",
+      "createdAt": "timeStamp",
+      "updatedAt": "timeStamp",
       "submittedAt": "timeStamp",
       "cancelledAt": "timeStamp",
 
       // Which Group Buy and orderables the order is associated with.
 
-      "groupBuy": "1",
+      "groupBuyId": "1",
 
       "orderables": [
         {
@@ -40,7 +42,7 @@
       // Payment and collection related
 
       "paymentMethod": "Stripe" | "PayPal",
-      "collectorId": "1", //req //just one for now
+      "paymentCollector": "1", //req //just one for now
 
       "paymentsMade": [
         {

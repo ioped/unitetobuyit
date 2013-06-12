@@ -18,6 +18,10 @@
       "email": "example@example.com",
       "organizer": "1", // req // just one for now // User UUID
 
+      "deskthority_thread_url": "deskthority.net",
+      "geekhack_thread_url": "geekhack.org",
+      "reddit_thread_url": "reddit.com",
+
       "manufacturer": "Signature Plastics", // Among others
 
       "endsAt": "timeStamp", // req, changeable
