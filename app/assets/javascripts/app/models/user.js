@@ -1,18 +1,23 @@
 UniteToBuyIt.User = DS.Model.extend({
-  name: DS.attr('string')
-});
+  createdAt:       DS.attr('string'),
+  updatedAt:       DS.attr('string'),
+  email:           DS.attr('string'),
+  displayName:     DS.attr('string'),
+  description:     DS.attr('string'),
+  avatarUrl:       DS.attr('string'),
+  idAdmin:         DS.attr('boolean', {
+    defaultValue: false
+  }),
 
-UniteToBuyIt.User.FIXTURES = [
-  {
-    id: 1,
-    name: "Pedro"
-  },
-  {
-    id: 2,
-    name: "Kim"
-  },
-  {
-    id: 3,
-    name: "Juan"
-  }
-];
+  firstName:       DS.attr('string'),
+  lastName:        DS.attr('string'),
+
+  deskthorityName: DS.attr('string'),
+  geekhackName:    DS.attr('string'),
+  reddit_name:     DS.attr('string'),
+
+  orders: DS.hasMany('UniteToBuyIt.Order'),
+  groupBuys: DS.hasMany('UniteToBuyIt.GroupBuy'),
+
+  countryCode: DS.attr('string')
+});
