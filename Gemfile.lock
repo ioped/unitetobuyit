@@ -58,11 +58,11 @@ GEM
       tzinfo (~> 0.3.22)
     moped (1.5.0)
     multi_json (1.7.6)
+    oj (2.0.14)
     origin (1.1.0)
     polyglot (0.3.3)
-    rabl-rails (0.3.3)
-      activesupport (~> 3.0)
-      railties (~> 3.0)
+    rabl (0.8.5)
+      activesupport (>= 2.3.14)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -124,7 +124,8 @@ DEPENDENCIES
   bson_ext
   gon (~> 4.1.1)
   mongoid (~> 3.1.4)
-  rabl-rails (~> 0.3.3)
+  oj
+  rabl
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   therubyracer

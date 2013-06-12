@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
@@ -9,7 +10,8 @@ gem 'bson_ext'
 gem 'thin'
 
 gem "mongoid", "~> 3.1.4"
-gem "rabl-rails", "~> 0.3.3"
+gem 'rabl'
+gem 'oj'
 gem "gon", "~> 4.1.1"
 
 group :assets do
