@@ -2,53 +2,191 @@
   UniteToBuyIt.advanceReadiness();
 </script>
 
+<!-------------------
+Application Templates
+-------------------->
+
 <script type="text/x-handlebars" >
   <header>
     <h1>UNITE!</h1>
     <ul>
-      <li><a href="/#">Unite</a></li>
-      <li><a href="/#/users">Users</a></li>
-      <li><a href="/#/group_buys">Group Buys</a></li>
-      <li><a href="/#/orders">My orders</a></li>
-      <li><a href="/#/gallery">Gallery</a></li>
-      <li><a href="/#/account">Account</a></li>
+      <li>{{#linkTo index}}Unite{{/linkTo}}</li>
+      <li>{{#linkTo users}}Users{{/linkTo}}</li>
+      <li>{{#linkTo group_buys}}Group Buys{{/linkTo}}</li>
+      <li>{{#linkTo orders}}My Orders{{/linkTo}}</li>
+      <li>{{#linkTo about}}About{{/linkTo}}</li>
+      <li>{{#linkTo faq}}FAQ{{/linkTo}}</li>
+      <li>{{#linkTo contact_us}}Contact Us{{/linkTo}}</li>
+      <li>{{#linkTo gon.id}}My Profile{{/linkTo}}</li>
     </ul>
   </header>
 
-  <div>
+  <div class="rounded-1" style="background-color: yellow">
     {{outlet}}
-  <div>
+  </div>
 
   <footer>
     &copy;2013 pedro
   </footer>
 </script>
 
+
+
+<!-------------
+Users Templates
+-------------->
+
+<!-- Users Index -->
+
 <script type="text/x-handlebars" data-template-name="users">
-  <h2>Users</h2>
-  {{#each user in model}}
-    <p>
-      {{#linkTo users.show user}}{{user.name}}{{/linkTo}}
-    </p>
-  {{/each}}
+
+  <div>
+    <h2>Users Index</h2>
+
+    {{#each user in model}}
+      <p>
+        {{#linkTo users.show user}}
+          {{user.displayName}}
+        {{/linkTo}}
+      </p>
+    {{else}}
+      <p>There are no users. Join?</p>
+    {{/each}}
+  </div>
+
+  {{outlet}}
+
 </script>
 
-<script type="text/x-handlebars" data-template-name="group_buys">
-  <h2>Group Buys</h2>
+
+<!-- Users Show -->
+
+<script type="text/x-handlebars" data-template-name="users/show">
+  <div>
+
+    {{#linkTo users}}Back{{/linkTo}}
+
+    <h2>{{displayName}}</h2>
+    <div>
+      <h3>Personal Information</h3>
+      {{countryCode}}
+
+      {{#if isAdministrator}}
+        <p>is admin</p>
+      {{else}}
+        <p>Not admin</p>
+      {{/if}}
+
+    </div>
+<img class="avatar-profile" {{ bindAttr src="avatarUrl"}} >
+
+
+    <p>order</p>
+
+    <p>after</p>
+  </div>
 </script>
+
+
+
+<!-----------------
+GroupBuys Templates
+------------------>
+
+<!-- GroupBuys Index -->
+
+<script type="text/x-handlebars" data-template-name="group_buys">
+  <div>
+    <h2>Group Buys</h2>
+
+    <ul>
+      {{#each group_buy in model}}
+        <li>
+          {{#linkTo group_buys.show group_buy}}
+            {{group_buy.name}}
+          {{/linkTo}}
+        </li>
+      {{else}}
+        <p>There are no Group Buys. Why don't you create one?</p>
+      {{/each}}
+    </ul>
+
+  </div>
+
+  {{outlet}}
+
+</script>
+
+
+<!-- GroupBuys Show -->
+
+<script type="text/x-handlebars" data-template-name="group_buys/show">
+  <div>
+    <ul>
+      <li>
+        {{#linkTo group_buys}}
+          Back
+        {{/linkTo}}
+      </li>
+      <li>
+        {{#linkTo orders}}
+          Order it!
+        {{/linkTo}}
+      </li>
+    </ul>
+    <h2>{{name}}</h2>
+    {{#each collector in paymentCollectors}}
+      {{#linkTo users.show collector}}
+        {{collector.name}}
+      {{/linkTo}}
+    {{/each}}
+  </div>
+</script>
+
+
+
+<!--------------
+Orders Templates
+--------------->
 
 <script type="text/x-handlebars" data-template-name="orders">
   <h2>Orders</h2>
 </script>
 
+
+
+
+
 <script type="text/x-handlebars" data-template-name="orderable_sets">
 
 </script>
+
+
 
 <script type="text/x-handlebars" data-template-name="orderable_items">
 
 </script>
 
-<script type="text/x-handlebars" data-template-name="gallery">
-  <h2>Gallery</h2> 
+
+
+<!---------------------
+Miscellaneous Templates
+---------------------->
+
+<script type="text/x-handlebars" data-template-name="about">
+  <h2>About</h2>
+
 </script>
+
+<script type="text/x-handlebars" data-template-name="faq">
+  <h2>FAQ</h2>
+
+</script>
+
+<script type="text/x-handlebars" data-template-name="contact_us">
+  <h2>Contact Us</h2>
+
+</script>
+
+
+
