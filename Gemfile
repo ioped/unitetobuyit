@@ -4,7 +4,10 @@ ruby '2.0.0'
 gem 'rails', '3.2.13'
 
 gem 'bson_ext'
-gem 'thin'
+
+group :development do
+  gem 'thin'
+end
 
 gem "mongoid", "~> 3.1.4"
 gem 'rabl'
