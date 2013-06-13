@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_filter :authorize
   respond_to :json
 
   def index
