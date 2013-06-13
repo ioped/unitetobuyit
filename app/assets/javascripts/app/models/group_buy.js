@@ -2,6 +2,9 @@ UniteToBuyIt.GroupBuy = DS.Model.extend({
   createdAt:        DS.attr('string'),
   updatedAt:        DS.attr('string'),
 
+  userId: DS.belongsTo('UniteToBuyIt.User', {
+    inverse: 'groupBuyIds'
+  }),
   name:             DS.attr('string'),
   email:            DS.attr('string'),
   // organizer:        DS.belongsTo('UniteToBuyIt.User'),

@@ -24,4 +24,4 @@ UniteToBuyIt.displayError = function(e) {
   }
 };
 
-UniteToBuyIt.deferReadiness()
+UniteToBuyIt.deferReadiness();

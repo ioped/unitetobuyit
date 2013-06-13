@@ -17,7 +17,8 @@ UniteToBuyIt.User = DS.Model.extend({
   reddit_name:     DS.attr('string'),
 
   orders: DS.hasMany('UniteToBuyIt.Order'),
-  groupBuys: DS.hasMany('UniteToBuyIt.GroupBuy'),
-
+  groupBuyIds: DS.hasMany('UniteToBuyIt.GroupBuy', {
+    inverse: 'userId'
+  }),
   countryCode: DS.attr('string')
 });
