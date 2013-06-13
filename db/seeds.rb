@@ -5,7 +5,6 @@
 User.destroy_all
 GroupBuy.destroy_all
 Order.destroy_all
-OrderableItem.destroy_all
 OrderableSet.destroy_all
 Address.destroy_all
 
