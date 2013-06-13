@@ -15,18 +15,18 @@ attributes(
   :description           ,
   :avatar_url            ,
 
+  # Community profiles
+
   :deskthority_name      ,
   :geekhack_name         ,
   :reddit_name           ,
 
+  # 
+
   :first_name            ,
   :last_name             ,
   :country_code          ,
-
-  # Password properties
-
-  :hashed                ,
-  :salt
+  :group_buy_ids         ,
 )
 attribute(
   _id: :id
@@ -56,16 +56,6 @@ child(:orders) {
     :_id,
     :payment_method,
     :group_buy_id
-  )
-  attribute(
-    _id: :id
-  )
-}
-
-child(:group_buys) {
-  attributes(
-    :_id,
-    :name
   )
   attribute(
     _id: :id

@@ -133,11 +133,17 @@ GroupBuys Templates
       </li>
     </ul>
     <h2>{{name}}</h2>
-    {{#each collector in paymentCollectors}}
-      {{#linkTo users.show collector}}
-        {{collector.name}}
-      {{/linkTo}}
-    {{/each}}
+    <ul>
+      {{#each orderableSet}}
+        <li>
+          {{#linkTo orderable_set.show orderableSet}}
+            {{orderableSet.name}}
+          {{/linkTo}}
+        </li>
+      {{else}}
+        <p>This group buy is just for show.</p>
+      {{/each}}
+    </ul>
   </div>
 </script>
 
