@@ -1,26 +1,160 @@
-body {
-  padding: 0 1em 0 1em;
+////////////
+// Mixins //
+////////////
+
+@mixin button($padding: 1rem 2rem 1rem 2rem, $color: blue, $background-color: yellow) {
+  padding: $padding !important;
+  color: $color;
+  background-color: $background-color;
 }
 
-li {
-  list-style: none;
-}
-
-.avatar-profile {
-  max-height: 20em;
-  max-width: 20em;
-}
-
-
-@mixin rounded($radius: 5em) {
+@mixin rounded($radius: 5rem) {
   border-radius: $radius;
 }
 
+@mixin centered($width: 5rem) {
+  margin: 0 auto;
+  width: $width;
+  text-align: center;
+}
+
+
+
+/////////////////////////
+// Classes with Mixins //
+/////////////////////////
+
+// Rounded
 
 .rounded-5 {
   @include rounded
 }
 
 .rounded-1 {
-  @include rounded(1em)
+  @include rounded(1rem)
 }
+
+// Centered
+
+.centered-5 {
+  @include centered
+}
+
+.centered-10 {
+  @include centered(10rem)
+}
+
+// Button
+
+.button-1-2 {
+  @include button
+}
+
+.fail {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
+}
+
+
+
+//////////////
+// Elrements //
+//////////////
+
+body {
+}
+
+.avatar-profile {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+h1 {
+  font: normal 3.625rem/0.9 "League Gothic";
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font: normal 2.625rem/0.9 "League Gothic";
+  margin-bottom: 1rem;
+}
+
+
+
+/////////////
+// Classes //
+/////////////
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  font: normal 1rem Arial;
+  li {
+    text-align:center;
+    display: inline;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    &:visited {
+      color: white;
+    }
+  }
+}
+
+
+
+.navigation {
+  position: static;
+  overflow: auto;
+  color: white;
+}
+
+a:hover {
+  background-color: blue;
+}
+
+
+.main-title {
+  font: normal 1.5rem Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, Helvetica, sans-serif;
+}
+
+
+.padded {
+  padding: 1rem 0rem;
+}
+
+
+footer {
+   left:0;
+   bottom:0;
+   height:3rem;
+   width: 100%;
+   color: white;
+   background-color: black;
+}
+
+
+
+/////////
+// IDs //
+/////////
+
+#main {
+  margin: 0.8rem 1rem;
+}
+
+#logout {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 1rem;
+}
+
+
