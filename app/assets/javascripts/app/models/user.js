@@ -5,7 +5,7 @@ UniteToBuyIt.User = DS.Model.extend({
   displayName:     DS.attr('string'),
   description:     DS.attr('string'),
   avatarUrl:       DS.attr('string'),
-  idAdmin:         DS.attr('boolean', {
+  'isAdmin?':         DS.attr('boolean', {
     defaultValue: false
   }),
 
