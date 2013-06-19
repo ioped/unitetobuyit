@@ -7,6 +7,7 @@ attributes(
   :_id                   ,
   :created_at            ,
   :updated_at            ,
+  :is_admin?             ,
 
   # User identification
 
