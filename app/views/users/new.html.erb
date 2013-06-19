@@ -1,7 +1,7 @@
-<h1>Sign Up</h1>
+<h1 class="centered-5">Sign Up</h1>
 <%= link_to "Back", login_path %>
 
-<%= form_for @user do |f| %>
+<%= form_for @user, html: {class: "centered-10"} do |f| %>
 
   <% if @user.errors.any? %>
     <div class="error_messages">
@@ -34,5 +34,5 @@
     <%= f.password_field :password_confirmation %>
   </p>
   
-  <%= f.submit :class => "btn" %>
+  <%= f.submit :class => "button-1-2" %>
 <% end %>
