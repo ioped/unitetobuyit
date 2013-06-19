@@ -1,7 +1,9 @@
 <script>
   UniteToBuyIt.advanceReadiness();
-  var current_user = gon.id;
+//  var current_user = UniteToBuyIt.User.find(gon.id);
 </script>
+
+
 
 <!-------------------
 Application Templates
@@ -9,24 +11,36 @@ Application Templates
 
 <script type="text/x-handlebars" >
   <header>
-    <h1>UNITE!</h1>
-    <ul>
-      <li>{{#linkTo index}}Unite{{/linkTo}}</li>
-      <li>{{#linkTo users}}Users{{/linkTo}}</li>
-      <li>{{#linkTo group_buys}}Group Buys{{/linkTo}}</li>
-      <li>{{#linkTo orders}}My Orders{{/linkTo}}</li>
-      <li>{{#linkTo about}}About{{/linkTo}}</li>
-      <li>{{#linkTo faq}}FAQ{{/linkTo}}</li>
-      <li>{{#linkTo contact_us}}Contact Us{{/linkTo}}</li>
-    </ul>
+    <nav>
+      <ul>
+        <li class="app_name">{{#linkTo index}}Unite To Buy It!{{/linkTo}}</li>
+        <li>{{#linkTo users}}Users{{/linkTo}}</li>
+        <li>{{#linkTo group_buys}}Group Buys{{/linkTo}}</li>
+        <li>{{#linkTo orders}}My Orders{{/linkTo}}</li>
+        <li><a id="logout" href="/logout">Logout</a></li>
+      </ul>
+    </nav>
   </header>
-  <div class="main rounded-1">
+
+  <div id="main">
     {{outlet}}
   </div>
 
   <footer>
     &copy;2013 pedro
   </footer>
+</script>
+
+
+<!-- Homepage/Index -->
+
+<script type="text/x-handlebars" data-template-name="index">
+  <div>
+    <h2>Index</h2>
+    {{!#each groupBuy in controller}}
+      {{!groupBuy.name}}
+    {{!/each}}
+  </div>
 </script>
 
 
@@ -70,16 +84,16 @@ Users Templates
       <h3>Personal Information</h3>
       {{countryCode}}
 
-      {{#if isAdministrator}}
+      {{#if 'isAdmin?'}}
         <p>is admin</p>
       {{else}}
         <p>Not admin</p>
       {{/if}}
 
     </div>
-
-    <img class="avatar-profile" {{ bindAttr src="avatarUrl"}} >
-
+    {{#if avatarUrl}}
+      <img class="avatar-profile" {{ bindAttr src="avatarUrl"}} >
+    {{/if}}
   </div>
 </script>
 
@@ -157,10 +171,15 @@ GroupBuys Templates
     {{/linkTo}}
 
     <p>Create a new Group Buy</p>
-    <label>Name:<br />{{view Ember.TextField valueBinding="name"}}</label>
-    <label>Description:<br />{{view Ember.TextArea valueBinding="description"}}</label>
-    <button {{action saveGroupBuy}}>Save</button>
-    {{#linkTo group_buys}}Cancel{{/linkTo}}
+    <label>Name:<br>
+      {{view Ember.TextField valueBinding="name"}}
+    </label><br>
+    <label>Description:<br>
+      {{view Ember.TextArea valueBinding="description"}}
+    </label><br>
+    <button class="button-1-2 rounded-1 fail"> {{#linkTo group_buys}}Cancel{{/linkTo}}</button>
+    <button class="button-1-2 rounded-1 success" {{action saveGroupBuy}}>Save</button>
+
   </div>
 </script>
 
@@ -173,7 +192,6 @@ Orders Templates
 <script type="text/x-handlebars" data-template-name="orders">
   <h2>Orders</h2>
 </script>
-
 
 
 <script type="text/x-handlebars" data-template-name="orderable_sets">
@@ -191,19 +209,18 @@ Orders Templates
 Miscellaneous Templates
 ---------------------->
 
+<!-- Currently Removed -->
+
 <script type="text/x-handlebars" data-template-name="about">
   <h2>About</h2>
-
 </script>
 
 <script type="text/x-handlebars" data-template-name="faq">
   <h2>FAQ</h2>
-
 </script>
 
 <script type="text/x-handlebars" data-template-name="contact_us">
   <h2>Contact Us</h2>
-
 </script>
 
 
